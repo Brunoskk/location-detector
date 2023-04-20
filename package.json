@@ -1,0 +1,22 @@
+{
+  "name": "location-detector",
+  "version": "1.0.0",
+  "description": "get location based on ip address",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Brun0skk",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brunoskk/location-detector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Brunoskk/location-detector/issues"
+  },
+  "homepage": "https://github.com/Brunoskk/location-detector#readme"
+}
