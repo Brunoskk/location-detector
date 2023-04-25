@@ -147,4 +147,7 @@ dist
 
 *.rdb
 
+### VS CODE ###
+.vscode
+
 # End of https://www.toptal.com/developers/gitignore/api/redis,node
