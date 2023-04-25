@@ -77,7 +77,7 @@ docker logs --tail <numero_linhas> -f <container_name>
 
 <a id="ancora1"></a>
 
-# 📦 Utilizando a Aplicação
+## 📦 Utilizando a Aplicação
 
 ### Variaveis de Ambiente
 
@@ -113,7 +113,7 @@ TOKEN_IPSTACK=<Your-token>
 
 *_Obs: A variável **TOKEN_IPSTACK** referece ao token da api pública que você pode obter gratuitamente acessando este link [ipstack](https://ipstack.com/)._*
 
-### Por default o kafka container vai criar dois tópicos descritos no seu arquivo (**.yml**), sendo eles o inputTopic e outputTopic confome descrito também no arquivo (**.env**)
+#### Por default o kafka container vai criar dois tópicos descritos no seu arquivo (**.yml**), sendo eles o inputTopic e outputTopic confome descrito também no arquivo (**.env**).
 
 *_Obs: O mesmo pode ser modificado para se criar tópicos de sua preferência sejá declarando na variável do docker ou criando manualmente, lembrando apenas de modificar as variáveis de ambiente para que aplicação funcione corretamente._*
 
@@ -130,7 +130,7 @@ TOKEN_IPSTACK=<Your-token>
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
 ```
 
-### Para publicar informações no tópico para ver a execução do projeto basta, definir um producer e um consumer encima dos tópicos criados conforme instrução abaixo
+#### Para publicar informações no tópico para ver a execução do projeto basta definir um producer e um consumer encima dos tópicos criados conforme instrução abaixo.
 
 Para definir o producer que vai receber os dados que o streming vai consumir:
 
@@ -171,28 +171,26 @@ Para definir o consumer que receberá os dados resultantes da aplicação:
 
 <a id="ancora2"></a>
 
-# ⚙️ Iniciando a Aplicação
+## ⚙️ Iniciando a Aplicação
 
-### Para iniciar a aplicação basta executar os seguintes comandos
+### Para iniciar a aplicação basta executar os seguintes comandos.
 
-<br>
-
-#### Este comando vai gerar o build da aplicação
+#### Este comando vai gerar o build da aplicação:
 
 ```SHELL
 npm run build
 ```
 
-#### Após o build ser gerado basta rodar este comando
+#### Após o build ser gerado basta rodar este comando:
 
 ```SHELL
 npm run start
 ```
 
-### Saída gerada pela aplicação
+### Saída gerada pela aplicação:
 
 <img src='./public/images/startAplication.png'>
 
-#### Após a inicialização da aplicação por meio do producer e consumer, basta inserir dados e aguardar a saída dos mesmos
+#### Após a inicialização da aplicação por meio do producer e consumer, basta inserir dados e aguardar a saída dos mesmos.
 
 *_Obs: A aplicação faz uso do Redis banco de cache para controle dos dados gerados, gerando apenas uma informação por TTL definido na (**.env**) arquivo que por default será 30 min retornando um IP e client._*
