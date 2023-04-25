@@ -1,5 +1,5 @@
 import { KStream, KafkaStreams } from "kafka-streams";
-import { Prefixs } from "../../ts/enums/redis.enum.ts";
+import { Prefixs } from "../../ts/enums/redisEnum.js";
 import { IipStackUtil } from "../../ts/interfaces/ipstack";
 import { IKafkaStreamsUtil } from "../../ts/interfaces/kafkaStreams";
 import { IRedisUtil } from "../../ts/interfaces/redisUtil";
